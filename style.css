@@ -1,0 +1,343 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+    
+#menus{
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#left_menu{
+    display: flex;
+    justify-content: space-between;
+    width: 407.9px;
+}
+
+li{
+    list-style-type: none;
+}
+
+ul{
+    display: flex;
+    border-radius: 7px;
+    background-color: rgb(243, 243, 243);
+}
+
+.navs{
+    background-color: rgb(243, 243, 243);
+    border-radius: 7px;
+    border: none;
+    margin: 5px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    font-family: "jetbrains mono";
+    text-align: center;
+}
+
+::placeholder{
+    text-decoration: none;
+    font-family: "jetbrains mono";
+}
+
+.navs:hover{
+    cursor: pointer;
+    background-color: rgb(208 244 145);
+}
+
+#menu:hover #dropdown_1{
+    animation-name: drop1;
+    animation-duration: 350ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#shop_all:hover #dropdown_2{
+    animation-name: drop2;
+    animation-duration: 350ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#login:hover #dropdown_3{
+    animation-name: drop3;
+    animation-duration: 450ms;
+    display: flex;
+    flex-direction: column;
+}
+
+#register:hover #dropdown_4{
+    animation-name: drop4;
+    animation-duration: 450ms;
+    display: flex;
+    flex-direction: column;
+}
+
+#cart:hover #dropdown_5{
+    animation-name: drop5;
+    animation-duration: 350ms;
+    display: block;
+}
+
+.radio_props:hover{
+    cursor: pointer;
+}
+
+#forgot:hover{
+        cursor: pointer;
+        color: rgb(160, 164, 151);
+}
+
+.terms:hover{
+        color: rgb(208 244 145);
+        text-decoration-color: black;
+}
+
+#sign_in:hover{
+    cursor: pointer;
+    background-color: rgb(208 244 145);
+    color: black;
+    border: none;
+}
+
+input:hover{
+            border: 1px solid black;
+}
+
+
+#logo{
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    right: 50%;
+}
+
+#logo_image{
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    width: 90px;
+}
+
+#logo_image:hover{
+    cursor:pointer;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.content li{
+    font-size: 0.9em;
+}
+
+.content a:hover{
+    cursor: pointer;
+    color: rgb(160, 164, 151);
+}
+
+.dropdown{
+    border-radius: 7px;
+    width: 21.3%;
+    background-color: rgb(243, 243, 243);
+    position: fixed;
+    box-shadow: 4px 2px;
+    display: none;
+}
+
+#dropdown_1{
+    height: 122px;
+}
+
+#dropdown_2{
+    height: 144px;
+    left: 20px;
+}
+
+#dropdown_3{
+    height: 260px;
+    width: 16%;
+}
+
+#dropdown_4{
+    padding-top: 10px;
+    height: 420px;
+    right: 18px;
+    width: 16%;
+}
+
+#dropdown_5{
+    right: 18px;
+    height: 50px;
+    width: 16%;
+    align-content: center;
+    padding-left: 15px;
+}
+
+#dropdown_5 a{
+    font-size: 0.8em;
+}
+
+
+#welcome{
+    padding-left: 15px;
+    font-size: 0.9em;
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+
+.form_block{
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    height: 65px;
+}
+
+#radio{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.radio_stuff{
+    display:flex;
+    align-items: center;
+}
+
+.radio_stuff label{
+    margin: 6px;
+    font-size: 0.72em;
+}
+
+.radio_props{
+    appearance: none;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%px;
+    border: 1px dashed black;
+    background-color: rgb(243, 243, 243);
+    
+}
+
+.radio_props::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    
+}
+
+.radio_props:checked{
+    border-color: rgb(208 244 145);
+}
+
+.radio_props:checked::before {
+    background: rgb(208 244 145);
+}
+
+input[type=text]{
+    padding-left: 8px;
+    height: 60px;
+    width: 230px;
+    border-radius: 7px;
+    border: 1px dashed black;
+    background-color: rgb(243, 243, 243);
+}
+
+
+#sign_in{
+    animation-name: opacity;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    height: 60px;
+    width: 230px;
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+}
+    
+
+#forgot{
+    font-size: 0.7em;
+    position: relative;
+    left: 175px;
+    bottom: 100px;
+}
+
+
+.terms{
+    text-decoration: underline;
+}
+
+
+#filters{
+    padding-right: 38px;
+    position: fixed;
+    padding-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@keyframes rotate{
+    100%{transform: rotateY(360deg)};
+}
+
+@keyframes drop1{
+    from{height: 60px};
+    to{height: 122px};
+}
+
+@keyframes drop2{
+    from{height: 90px};
+    to{height: 144px};
+}
+
+@keyframes drop3{
+    from{height: 200px};
+    to{height: 260px};
+}
+
+@keyframes drop4{
+    from{height: 390px};
+    to{height: 420px};
+}
+
+@keyframes drop5{
+    from{height: 30px};
+    to{height: 50px;};
+}
+
+@keyframes opacity{
+    50%{opacity: 50%;}
+}
+
