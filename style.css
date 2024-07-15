@@ -3,25 +3,91 @@
     padding: 0px;
     box-sizing: border-box;
 }
-    
-#menus{
+
+:root{
+    --green: rgb(208 244 145);
+    --grey: rgb(160, 164, 151);
+}
+
+header{
+    position: fixed;
+    top: 0px;
+    width:100%;
+}
+
+main{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#list_of_products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 56px;
+}
+
+.items_container{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 230px 230px 230px 230px 230px 230px;
+}
+
+main div{
+    text-align: center;
+}
+
+.menus{
+    padding-top: 1rem;
     padding-right: 1.25rem;
     padding-left: 1.25rem;
-    position: fixed;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+
+#text{
+    font-size: 0.8rem;
+    width: 650px;
+    height: 56px;
+    padding-top: 16px;
+    padding-bottom: 25px;
+}
+
 #left_menu{
     display: flex;
     justify-content: space-between;
-    width: 407.9px;
+    width: 400px;
+}
+
+#filter_section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.40rem;
 }
 
 li{
     list-style-type: none;
+}
+
+#filter_word{
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 70px;
+}
+
+.filter_box{
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 ul{
@@ -33,11 +99,26 @@ ul{
 .navs{
     background-color: rgb(243, 243, 243);
     border-radius: 7px;
+    height: 30px;
     border: none;
     margin: 5px;
-    height: 30px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.goods{
+    height: 33px;   
+}
+
+#goods_ul{
+    justify-content: center;
+    background-color: white;
+}
+
+.filter_settings{
+    background-color: white;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 a{
@@ -98,7 +179,7 @@ a{
 
 #forgot:hover{
         cursor: pointer;
-        color: rgb(160, 164, 151);
+        color: var(--grey);
 }
 
 .terms:hover{
@@ -114,9 +195,8 @@ a{
 }
 
 input:hover{
-            border: 1px solid black;
+    border: 1px solid black;
 }
-
 
 #logo{
     display: flex;
@@ -152,7 +232,7 @@ input:hover{
 
 .content a:hover{
     cursor: pointer;
-    color: rgb(160, 164, 151);
+    color: var(--grey);
 }
 
 .dropdown{
@@ -175,20 +255,21 @@ input:hover{
 
 #dropdown_3{
     height: 260px;
-    width: 16%;
+    width: 250px;
 }
 
 #dropdown_4{
+    right: 18px;
     padding-top: 10px;
     height: 420px;
-    right: 18px;
-    width: 16%;
+    width: 250px;
+    
 }
 
 #dropdown_5{
     right: 18px;
     height: 50px;
-    width: 16%;
+    width: 250px;
     align-content: center;
     padding-left: 15px;
 }
@@ -241,7 +322,6 @@ input:hover{
     border-radius: 50%px;
     border: 1px dashed black;
     background-color: rgb(243, 243, 243);
-    
 }
 
 .radio_props::before {
@@ -270,7 +350,6 @@ input[type=text]{
     background-color: rgb(243, 243, 243);
 }
 
-
 #sign_in{
     animation-name: opacity;
     animation-duration: 2.5s;
@@ -283,7 +362,6 @@ input[type=text]{
     background-color: black;
     color: white;
 }
-    
 
 #forgot{
     font-size: 0.7em;
@@ -292,21 +370,10 @@ input[type=text]{
     bottom: 100px;
 }
 
-
 .terms{
     text-decoration: underline;
 }
 
-
-#filters{
-    padding-right: 38px;
-    position: fixed;
-    padding-top: 1rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 @keyframes rotate{
     100%{transform: rotateY(360deg)};
