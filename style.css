@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 :root{
     --green: rgb(208 244 145);
     --grey: rgb(160, 164, 151);
@@ -18,6 +16,22 @@
     justify-content: flex-end;
     align-items: center;
     font-size: 0.75rem;
+}
+
+.items:hover .sizes_section{
+    cursor: pointer;
+    display: block;
+}
+
+.sizes_section{
+    position: absolute;
+    bottom: 25px;
+    display: none;
+}
+
+.cost_section{
+    bottom: 0px;
+    display: none;
 }
 
 .new_label{
@@ -126,6 +140,11 @@ ul{
     padding-right: 10px;
 }
 
+.sizes{
+    width: 45px;
+    margin: 1px;
+}
+
 .goods{
     height: 33px;   
 }
@@ -198,13 +217,13 @@ a{
 }
 
 #forgot:hover{
-        cursor: pointer;
-        color: var(--grey);
+    cursor: pointer;
+    color: var(--grey);
 }
 
 .terms:hover{
-        color: rgb(208 244 145);
-        text-decoration-color: black;
+    color: rgb(208 244 145);
+    text-decoration-color: black;
 }
 
 #sign_in:hover{
