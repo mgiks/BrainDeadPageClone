@@ -23,6 +23,10 @@
     display: block;
 }
 
+.items:hover img{
+    content: url("items/RotatedPotato.jpg")
+}
+
 .sizes_section{
     position: absolute;
     bottom: 25px;
