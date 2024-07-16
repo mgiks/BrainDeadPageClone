@@ -4,16 +4,35 @@
     box-sizing: border-box;
 }
 
+
+
 :root{
     --green: rgb(208 244 145);
     --grey: rgb(160, 164, 151);
 }
 
+.items{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.75rem;
+}
+
+.new_label{
+    width: 30px;
+    background-color: var(--green);
+    border-radius: 4px;
+}
+
 header{
     position: fixed;
+    z-index: 1;
     top: 0px;
-    width:100%;
+    width: 100%;
 }
+
 
 main{
     margin-top: 150px;
@@ -32,8 +51,9 @@ main{
 .items_container{
     padding: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 230px 230px 230px 230px 230px 230px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 260px);
+    gap: 1rem;
 }
 
 main div{
