@@ -5,8 +5,46 @@
 }
 
 :root{
+    --purple: rgb(233,213,255);
     --green: rgb(208 244 145);
     --grey: rgb(160, 164, 151);
+}
+
+body, a, ::placeholder{
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.legal_customer_brand{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+footer{
+    min-height: 100vh;
+    background-color: var(--purple);
+    padding: 158px 4px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#upper_footer{
+}
+
+.footer_grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#location_time{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 0px 16px 32px;
+    font-size: 2.4rem;
 }
 
 .items{
@@ -99,7 +137,7 @@ main div{
 #left_menu{
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    width: 395px;
 }
 
 #filter_section{
@@ -144,6 +182,16 @@ ul{
     padding-right: 10px;
 }
 
+.lcb_labels{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.footer_navs{
+    display: inline-block;
+    text-align: left;
+}
+
 .sizes{
     width: 45px;
     margin: 1px;
@@ -166,13 +214,11 @@ ul{
 
 a{
     text-decoration: none;
-    font-family: "jetbrains mono";
     text-align: center;
 }
 
 ::placeholder{
     text-decoration: none;
-    font-family: "jetbrains mono";
 }
 
 .navs:hover{
@@ -180,7 +226,7 @@ a{
     background-color: rgb(208 244 145);
 }
 
-#menu:hover #dropdown_1{
+#menu:hover #menu_dropdown{
     animation-name: drop1;
     animation-duration: 350ms;
     display: flex;
@@ -188,7 +234,7 @@ a{
     justify-content: center;
 }
 
-#shop_all:hover #dropdown_2{
+#shop_all:hover #shop_all_dropdown{
     animation-name: drop2;
     animation-duration: 350ms;
     display: flex;
@@ -196,21 +242,21 @@ a{
     justify-content: center;
 }
 
-#login:hover #dropdown_3{
+#login:hover #login_dropdown{
     animation-name: drop3;
     animation-duration: 450ms;
     display: flex;
     flex-direction: column;
 }
 
-#register:hover #dropdown_4{
+#register:hover #register_dropdown{
     animation-name: drop4;
     animation-duration: 450ms;
     display: flex;
     flex-direction: column;
 }
 
-#cart:hover #dropdown_5{
+#cart:hover #cart_dropdown{
     animation-name: drop5;
     animation-duration: 350ms;
     display: block;
@@ -287,21 +333,21 @@ input:hover{
     display: none;
 }
 
-#dropdown_1{
+#menu_dropdown{
     height: 122px;
 }
 
-#dropdown_2{
+#shop_all_dropdown{
     height: 144px;
     left: 20px;
 }
 
-#dropdown_3{
+#login_dropdown{
     height: 260px;
     width: 250px;
 }
 
-#dropdown_4{
+#register_dropdown{
     right: 18px;
     padding-top: 10px;
     height: 420px;
@@ -309,15 +355,12 @@ input:hover{
     
 }
 
-#dropdown_5{
+#cart_dropdown{
     right: 18px;
     height: 50px;
     width: 250px;
     align-content: center;
     padding-left: 15px;
-}
-
-#dropdown_5 a{
     font-size: 0.8em;
 }
 
