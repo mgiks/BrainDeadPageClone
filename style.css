@@ -17,7 +17,12 @@ body, a, ::placeholder{
     font-style: normal;
 }
 
-.legal_customer_brand{
+#subscribe-div{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.legal-customer-brand{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -32,15 +37,15 @@ footer{
     justify-content: space-between;
 }
 
-#upper_footer{
+#upper-footer{
 }
 
-.footer_grid{
+.footer-grid{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }
 
-#location_time{
+#location-time{
     grid-column-start: 1;
     grid-column-end: 4;
     padding: 0px 16px 32px;
@@ -56,7 +61,7 @@ footer{
     font-size: 0.75rem;
 }
 
-.items:hover .sizes_section{
+.items:hover .sizes-section{
     cursor: pointer;
     display: block;
 }
@@ -65,18 +70,18 @@ footer{
     content: url("items/RotatedPotato.jpg")
 }
 
-.sizes_section{
+.sizes-section{
     position: absolute;
     bottom: 25px;
     display: none;
 }
 
-.cost_section{
+.cost-section{
     bottom: 0px;
     display: none;
 }
 
-.new_label{
+.new-label{
     width: 30px;
     background-color: var(--green);
     border-radius: 4px;
@@ -97,14 +102,14 @@ main{
     flex-direction: column;
 }
 
-#list_of_products{
+#list-of-products{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 56px;
 }
 
-.items_container{
+.items-container{
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -134,13 +139,13 @@ main div{
     padding-bottom: 25px;
 }
 
-#left_menu{
+#left-menu{
     display: flex;
     justify-content: space-between;
     width: 395px;
 }
 
-#filter_section{
+#filter-section{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -152,7 +157,7 @@ li{
     list-style-type: none;
 }
 
-#filter_word{
+#filter-word{
     font-size: 0.85rem;
     display: flex;
     justify-content: center;
@@ -161,7 +166,7 @@ li{
     width: 70px;
 }
 
-.filter_box{
+.filter-box{
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -182,12 +187,12 @@ ul{
     padding-right: 10px;
 }
 
-.lcb_labels{
+.lcb-labels{
     padding-left: 0.75rem;
     padding-right: 0.75rem;
 }
 
-.footer_navs{
+.footer-navs{
     display: inline-block;
     text-align: left;
 }
@@ -201,12 +206,12 @@ ul{
     height: 33px;   
 }
 
-#goods_ul{
+#goods-ul{
     justify-content: center;
     background-color: white;
 }
 
-.filter_settings{
+.filter-settings{
     background-color: white;
     margin-left: 2px;
     margin-right: 2px;
@@ -226,7 +231,7 @@ a{
     background-color: rgb(208 244 145);
 }
 
-#menu:hover #menu_dropdown{
+#menu:hover #menu-dropdown{
     animation-name: drop1;
     animation-duration: 350ms;
     display: flex;
@@ -234,7 +239,7 @@ a{
     justify-content: center;
 }
 
-#shop_all:hover #shop_all_dropdown{
+#shop-all:hover #shop-all-dropdown{
     animation-name: drop2;
     animation-duration: 350ms;
     display: flex;
@@ -242,27 +247,27 @@ a{
     justify-content: center;
 }
 
-#login:hover #login_dropdown{
+#login:hover #login-dropdown{
     animation-name: drop3;
     animation-duration: 450ms;
     display: flex;
     flex-direction: column;
 }
 
-#register:hover #register_dropdown{
+#register:hover #register-dropdown{
     animation-name: drop4;
     animation-duration: 450ms;
     display: flex;
     flex-direction: column;
 }
 
-#cart:hover #cart_dropdown{
+#cart:hover #cart-dropdown{
     animation-name: drop5;
     animation-duration: 350ms;
     display: block;
 }
 
-.radio_props:hover{
+.radio-props:hover{
     cursor: pointer;
 }
 
@@ -276,7 +281,7 @@ a{
     text-decoration-color: black;
 }
 
-#sign_in:hover{
+#sign-in:hover{
     cursor: pointer;
     background-color: rgb(208 244 145);
     color: black;
@@ -297,7 +302,7 @@ input:hover{
     right: 50%;
 }
 
-#logo_image{
+#logo-image{
     animation-name: rotate;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -305,7 +310,7 @@ input:hover{
     width: 90px;
 }
 
-#logo_image:hover{
+#logo-image:hover{
     cursor:pointer;
 }
 
@@ -333,21 +338,21 @@ input:hover{
     display: none;
 }
 
-#menu_dropdown{
+#menu-dropdown{
     height: 122px;
 }
 
-#shop_all_dropdown{
+#shop-all-dropdown{
     height: 144px;
     left: 20px;
 }
 
-#login_dropdown{
+#login-dropdown{
     height: 260px;
     width: 250px;
 }
 
-#register_dropdown{
+#register-dropdown{
     right: 18px;
     padding-top: 10px;
     height: 420px;
@@ -355,7 +360,7 @@ input:hover{
     
 }
 
-#cart_dropdown{
+#cart-dropdown{
     right: 18px;
     height: 50px;
     width: 250px;
@@ -363,7 +368,6 @@ input:hover{
     padding-left: 15px;
     font-size: 0.8em;
 }
-
 
 #welcome{
     padding-left: 15px;
@@ -373,7 +377,7 @@ input:hover{
     align-items: center;
 }
 
-.form_block{
+.form-block{
     padding-left: 5px;
     display: flex;
     align-items: center;
@@ -386,17 +390,17 @@ input:hover{
     align-items: flex-start;
 }
 
-.radio_stuff{
+.radio-stuff{
     display:flex;
     align-items: center;
 }
 
-.radio_stuff label{
+.radio-stuff label{
     margin: 6px;
     font-size: 0.72em;
 }
 
-.radio_props{
+.radio-props{
     appearance: none;
     border-radius: 50%;
     height: 24px;
@@ -410,7 +414,7 @@ input:hover{
     background-color: rgb(243, 243, 243);
 }
 
-.radio_props::before {
+.radio-props::before {
     content: '';
     display: inline-block;
     width: 15px;
@@ -419,11 +423,11 @@ input:hover{
     
 }
 
-.radio_props:checked{
+.radio-props:checked{
     border-color: rgb(208 244 145);
 }
 
-.radio_props:checked::before {
+.radio-props:checked::before {
     background: rgb(208 244 145);
 }
 
@@ -436,7 +440,7 @@ input[type=text]{
     background-color: rgb(243, 243, 243);
 }
 
-#sign_in{
+#sign-in{
     animation-name: opacity;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
