@@ -84,10 +84,10 @@
                             <div class="dropdown" id="login-dropdown"> 
                                 <a id="welcome">WELCOME BACK</a>
                                 <div class="form-block">
-                                    <input type="text" placeholder="Email">
+                                    <input  class="upper-inputs" type="text" placeholder="Email">
                                 </div>
                                 <div class="form-block">
-                                    <input type="text" placeholder="Password">
+                                    <input class="upper-inputs" type="text" placeholder="Password">
                                 </div>
                                 <div class="form-block">
                                     <button id="sign-in">
@@ -105,16 +105,16 @@
                             </button>
                             <div class="dropdown" id="register-dropdown">
                                 <div class="form-block">
-                                    <input type="text" placeholder="First Name">
+                                    <input class="upper-inputs" type="text" placeholder="First Name">
                                 </div>
                                 <div class="form-block">
-                                    <input type="text" placeholder="Last Name">
+                                    <input class="upper-inputs" type="text" placeholder="Last Name">
                                 </div>
                                 <div class="form-block">
-                                    <input type="text" placeholder="Email">
+                                    <input class="upper-inputs" type="text" placeholder="Email">
                                 </div>
                                 <div class="form-block">
-                                    <input type="text" placeholder="Password">
+                                    <input class="upper-inputs" type="text" placeholder="Password">
                                 </div>
                                 <div class="form-block" id="radio">
                                     <div class="radio-stuff">
@@ -1127,12 +1127,19 @@
             </div>
         </div>
         <div>
-            <p>SUBSCRIBE</p>
-            <div id="subscribe-div">
-                <input type="text" placeholder="Email">
-                <button>
-                    <a>SUBSCRIBE</a>
-                </button>
+            <div id="container-subscribe-form">
+                <p id="subscribe_label">SUBSCRIBE</p>
+                <div class="footer-grid">
+                    <div class="subscribe-div-form">
+                        <input id="footer-email-input" type="text" placeholder="Email">
+                        <button id="subscribe-button">
+                            <a>SUBSCRIBE</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <input class="radio-props" type="checkbox">
             </div>
         </div>
     </footer>

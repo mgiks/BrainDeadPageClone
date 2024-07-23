@@ -17,15 +17,22 @@ body, a, ::placeholder{
     font-style: normal;
 }
 
-#subscribe-div{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+.subscribe-div{
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 .legal-customer-brand{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+}
+
+.subscribe-div-form{
+    display: flex;
+    justify-content: space-between;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
 footer{
@@ -37,12 +44,23 @@ footer{
     justify-content: space-between;
 }
 
-#upper-footer{
+#footer-email-input{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    height: 65px;
+    width: 100%;
+    border: 1px dashed black;
+    border-radius: .375rem;
+    background-color: var(--purple);
 }
 
 .footer-grid{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+}
+
+#container-subscribe-form{
+    padding: 0px 16px 5px;
 }
 
 #location-time{
@@ -400,6 +418,25 @@ input:hover{
     font-size: 0.72em;
 }
 
+#subscribe_label{
+    margin-bottom: 8px;
+}
+
+#subscribe-button{
+   border-radius: 7px; 
+   margin-left: 8px;
+   padding-left: 18px;
+   padding-right: 18px;
+   background-color: var(--green);
+   border: none;
+}
+
+#subscribe-button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
 .radio-props{
     appearance: none;
     border-radius: 50%;
@@ -431,7 +468,7 @@ input:hover{
     background: rgb(208 244 145);
 }
 
-input[type=text]{
+.upper-inputs{
     padding-left: 8px;
     height: 60px;
     width: 230px;
