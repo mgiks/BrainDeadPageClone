@@ -8,6 +8,8 @@
     --purple: rgb(233,213,255);
     --green: rgb(208 244 145);
     --grey: rgb(160, 164, 151);
+    --left-menu-dropdown-width: 308.362px;
+    --right-menu-dropdown-width: 236.350px;
 }
 
 body, a, ::placeholder{
@@ -282,7 +284,7 @@ a{
 #cart:hover #cart-dropdown{
     animation-name: drop5;
     animation-duration: 350ms;
-    display: block;
+    display: flex;
 }
 
 
@@ -345,8 +347,8 @@ input:hover{
 }
 
 .dropdown{
+    width: var(--left-menu-dropdown-width);
     border-radius: 7px;
-    width: 21.3%;
     background-color: rgb(243, 243, 243);
     position: fixed;
     box-shadow: 4px 2px;
@@ -363,22 +365,22 @@ input:hover{
 }
 
 #login-dropdown{
+    width: var(--right-menu-dropdown-width);
     height: 260px;
-    width: 250px;
 }
 
 #register-dropdown{
-    right: 18px;
+    right: 20px;
     padding-top: 10px;
     height: 420px;
-    width: 250px;
+    width: var(--right-menu-dropdown-width)
     
 }
 
 #cart-dropdown{
-    right: 18px;
+    right: 20px;
     height: 50px;
-    width: 250px;
+    width: var(--right-menu-dropdown-width);
     align-items: center;
     padding-left: 15px;
     font-size: 0.8em;
@@ -470,7 +472,7 @@ input:hover{
 .upper-inputs{
     padding-left: 8px;
     height: 60px;
-    width: 230px;
+    width: 225px;
     border-radius: 7px;
     border: 1px dashed black;
     background-color: rgb(243, 243, 243);
