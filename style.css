@@ -56,6 +56,10 @@ footer{
     background-color: var(--purple);
 }
 
+#footer-email-input:hover{
+    border: 1px solid black;
+}
+
 .footer-grid{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
