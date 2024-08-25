@@ -484,10 +484,6 @@ input:hover{
 }
 
 #sign-in{
-    animation-name: opacity;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
     height: 60px;
     width: 230px;
     border-radius: 7px;
@@ -503,6 +499,15 @@ input:hover{
     bottom: 100px;
 }
 
+.unhighlightable-terms{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 #container-terms-confirmation{
     margin-top: 8px;
     padding: 0px 16px 5px;
@@ -513,6 +518,7 @@ input:hover{
 }
 
 #text-terms-confirmation{
+    user-select: none;
     margin: 5px;
 }
 
@@ -570,8 +576,3 @@ input:hover{
     from{height: 30px};
     to{height: 50px;};
 }
-
-@keyframes opacity{
-    50%{opacity: 50%;}
-}
-
